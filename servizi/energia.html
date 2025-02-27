@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energia - Agenzia di Servizi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- ...existing navbar code... -->
+  <nav class="fixed top-0 w-full bg-gray-800 shadow z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="../index.html">
+        <img src="../logo-aziendale.png" alt="Logo" class="h-10" loading="lazy">
+      </a>
+      <a href="../index.html" class="text-teal-400 hover:underline">Torna al sito</a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-8">Energia</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-4">a2a Energia</h2>
+          <!-- ... eventuali dettagli o link ... -->
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-4">Fastweb Energia</h2>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-4">Enel Energia</h2>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-4">Egea Energie</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nuova Sezione: Approfondimenti Energia -->
+    <section id="approfondimenti-energia" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-10">Approfondimenti Energia</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Approfondimento a2a Energia -->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">a2a Energia</h3>
+            <p class="mb-4">
+              a2a Energia offre soluzioni innovative per il risparmio energetico e servizi personalizzati adatti sia ad aziende che a privati. Scopri le tariffe competitive e le offerte personalizzate.
+            </p>
+            <a href="https://www.a2aenergia.it" target="_blank" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded">
+              Visita il sito
+            </a>
+          </div>
+          <!-- Approfondimento Fastweb Energia -->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Fastweb Energia</h3>
+            <p class="mb-4">
+              Fastweb Energia propone soluzioni integrate, con offerte trasparenti e un servizio clienti dedicato. La loro proposta è ideale per chi cerca affidabilità e innovazione nel mercato energetico.
+            </p>
+            <a href="https://www.fastwebenergia.it" target="_blank" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded">
+              Scopri di più
+            </a>
+          </div>
+          <!-- Approfondimento Enel Energia -->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Enel Energia</h3>
+            <p class="mb-4">
+              Enel Energia è uno dei principali operatori del settore, con soluzioni flessibili per l'energia domestica e le imprese. Approfitta delle loro offerte e delle innovazioni in campo sostenibile.
+            </p>
+            <a href="https://www.enelenergia.it" target="_blank" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded">
+              Visita Enel
+            </a>
+          </div>
+          <!-- Approfondimento Egea Energie -->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Egea Energie</h3>
+            <p class="mb-4">
+              Egea Energie si distingue per soluzioni energetiche su misura, con particolare attenzione alla sostenibilità e all’efficienza. Scopri come la loro offerta può essere la scelta giusta per te.
+            </p>
+            <a href="https://www.egeaenergie.it" target="_blank" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded">
+              Approfondisci
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione: Calcolatore Risparmio Energetico -->
+    <section id="calcolatore" class="py-16 bg-gray-800">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-10">Calcolatore Risparmio Energetico</h2>
+        <div id="preventivatoreContainer">
+          <!-- Markup del preventivatore -->
+          <form id="preventivatoreForm" class="space-y-4 max-w-lg mx-auto">
+            <div>
+              <label for="tipoServizio" class="block mb-2">Tipo di Servizio:</label>
+              <select id="tipoServizio" class="w-full p-3 rounded bg-gray-700 border border-gray-600">
+                <option value="luce">Luce</option>
+                <option value="gas">Gas</option>
+                <option value="entrambi">Entrambi</option>
+              </select>
+            </div>
+            <div id="consumoLuceDiv">
+              <label for="consumoLuce" class="block mb-2">Consumo Luce (kWh):</label>
+              <input type="number" id="consumoLuce" class="w-full p-3 rounded bg-gray-700 border border-gray-600" placeholder="es. 300" required>
+            </div>
+            <div id="consumoGasDiv" class="hidden">
+              <label for="consumoGas" class="block mb-2">Consumo Gas (Smc):</label>
+              <input type="number" id="consumoGas" class="w-full p-3 rounded bg-gray-700 border border-gray-600" placeholder="es. 100">
+            </div>
+            <div>
+              <label for="costoPrecedente" class="block mb-2">Costo Precedente (€):</label>
+              <input type="number" id="costoPrecedente" class="w-full p-3 rounded bg-gray-700 border border-gray-600" placeholder="es. 120">
+            </div>
+            <!-- Altri eventuali input -->
+            <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded">Calcola</button>
+          </form>
+          <div id="spinner" class="hidden mt-4">Calcolo in corso...</div>
+          <div id="risultato" class="mt-6 hidden">
+            <div id="dettagliPreventivo"></div>
+            <!-- Altri elementi (grafico, suggerimenti, ecc.) -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuovo Script per rendere funzionale il calcolatore -->
+    <script>
+      document.getElementById('preventivatoreForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Mostra lo spinner
+        document.getElementById('spinner').classList.remove('hidden');
+        // Raccogli i valori
+        const tipo = document.getElementById('tipoServizio').value;
+        const consumoLuce = parseFloat(document.getElementById('consumoLuce').value) || 0;
+        const consumoGas = parseFloat(document.getElementById('consumoGas').value) || 0;
+        const costoPrecedente = parseFloat(document.getElementById('costoPrecedente').value) || 0;
+        // Costanti ARERA
+        const PUN_LUCE = 0.13832, PSV_GAS = 0.52074;
+        // Definisci i gestori e i loro spread (valori esemplificativi)
+        const gestori = {
+          "a2a Energia": { luce: 0.02226, gas: 0.13 },
+          "Fastweb Energia": { luce: 0.05, gas: null },
+          "Enel Energia": { luce: 0.0222, gas: 0.0222 },
+          "Egea Energie": { luce: 0.04960, gas: 0.11 }
+        };
+
+        let resultsHTML = "";
+        // Loop per ciascun gestore
+        Object.entries(gestori).forEach(([nome, config]) => {
+          let costoLuceCalc = 0, costoGasCalc = 0;
+          if (tipo === "luce" || tipo === "entrambi") {
+            costoLuceCalc = (PUN_LUCE + (config.luce || 0)) * consumoLuce;
+          }
+          if (tipo === "gas" || tipo === "entrambi") {
+            costoGasCalc = (PSV_GAS + (config.gas || 0)) * consumoGas;
+          }
+          const totaleCosto = costoLuceCalc + costoGasCalc;
+          const risparmio = costoPrecedente > 0 ? (costoPrecedente - totaleCosto) : null;
+          
+          resultsHTML += `
+            <div class="p-4 bg-gray-700 rounded-md mb-4">
+              <strong>${nome}</strong><br>
+              ${tipo === "luce" ? 
+                `Luce: €${costoLuceCalc.toFixed(2)}` : 
+                tipo === "gas" ? 
+                  `Gas: €${costoGasCalc.toFixed(2)}` : 
+                  `Luce: €${costoLuceCalc.toFixed(2)} | Gas: €${costoGasCalc.toFixed(2)}<br>Total: €${totaleCosto.toFixed(2)}` 
+              }
+              ${risparmio !== null ? `<br>Risparmio: €${risparmio.toFixed(2)}` : ""}
+            </div>
+          `;
+        });
+        // Aggiorna e mostra i risultati
+        document.getElementById('dettagliPreventivo').innerHTML = resultsHTML;
+        document.getElementById('spinner').classList.add('hidden');
+        document.getElementById('risultato').classList.remove('hidden');
+      });
+    </script>
+
+    <!-- Eventuali ulteriori script necessari -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../preventivatorelucegas/server.js"></script>
+    <script src="../preventivatorelucegas/premium.js"></script>
+    <script src="../preventivatorelucegas/pianiTariffari.js"></script>
+  </main>
+
+  <footer class="bg-gray-800 text-center text-gray-300 py-4 mt-12">
+    <div class="container mx-auto">
+      <p>&copy; 2025 Agenzia di Servizi. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telefonia Moderna - Agenzia di Servizi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navbar aggiornata -->
+  <nav class="fixed top-0 w-full bg-gray-800 shadow z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="../index.html">
+        <img src="../logo-aziendale.png" alt="Logo" class="h-10" loading="lazy">
+      </a>
+      <!-- Raggruppa menu e "Torna al sito" a destra -->
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="#operators" class="text-white hover:text-teal-400">Gestori</a>
+        <a href="#faq-telefonia" class="text-white hover:text-teal-400">FAQ</a>
+        <a href="#consulenza" class="text-white hover:text-teal-400">Consulenza</a>
+        <a href="../index.html" class="text-teal-400 hover:underline ml-6">Torna al sito</a>
+      </div>
+    </div>
+    <!-- Menu mobile aggiornato -->
+    <div class="md:hidden bg-gray-800">
+      <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
+        <a href="#operators" class="text-white hover:text-teal-400">Gestori</a>
+        <a href="#faq-telefonia" class="text-white hover:text-teal-400">FAQ</a>
+        <a href="#consulenza" class="text-white hover:text-teal-400">Consulenza</a>
+        <a href="../index.html" class="text-teal-400 hover:underline">Torna al sito</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <header class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?telecom,technology');">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fadeInDown">Telefonia Moderna</h1>
+      <p class="text-lg md:text-2xl mb-8 max-w-2xl animate-fadeInUp">Scopri le soluzioni innovative dei principali operatori per una connettività che fa la differenza.</p>
+      <a href="#operators" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded transition animate-bounce">Scopri i Gestori</a>
+    </div>
+  </header>
+  
+  <!-- Sezione Gestori -->
+  <section id="operators" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">I Nostri Gestori</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card Windtre -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/800x600/?windtre');"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Windtre</h3>
+            <p class="mb-4 text-sm">Copertura capillare e tariffe competitive per privati e aziende.</p>
+            <a href="https://www.windtre.it" target="_blank" class="block text-teal-500 hover:underline">Visita Sito</a>
+          </div>
+        </div>
+        <!-- Card Fastweb -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/800x600/?fastweb');"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Fastweb</h3>
+            <p class="mb-4 text-sm">Connessioni in fibra ottica di alta qualità e pacchetti integrati.</p>
+            <a href="https://www.fastweb.it" target="_blank" class="block text-teal-500 hover:underline">Visita Sito</a>
+          </div>
+        </div>
+        <!-- Card Iliad -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/800x600/?iliad');"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Iliad</h3>
+            <p class="mb-4 text-sm">Tariffe trasparenti e attivazioni semplificate per soluzioni competitive.</p>
+            <a href="https://www.iliad.it" target="_blank" class="block text-teal-500 hover:underline">Visita Sito</a>
+          </div>
+        </div>
+        <!-- Card Very Mobile -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
+          <div class="h-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/800x600/?mobile');"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Very Mobile</h3>
+            <p class="mb-4 text-sm">Soluzioni flessibili e a basso costo, ideali per tariffe senza impegni.</p>
+            <a href="https://www.verymobile.it" target="_blank" class="block text-teal-500 hover:underline">Visita Sito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Nuova Sezione: Approfondimenti Gestori -->
+  <section id="approfondimenti" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8 text-teal-500">Approfondimenti Gestori</h2>
+      <div class="flex flex-col md:flex-row justify-around">
+        <!-- Card per Windtre -->
+        <div class="bg-gray-900 p-6 m-2 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold mb-4">Windtre</h3>
+          <p class="mb-4 text-sm">Dettagli e offerte esclusive con supporto dedicato per privati e aziende.</p>
+          <a href="https://www.windtre.it" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded">Scopri di più</a>
+        </div>
+        <!-- Card per Fastweb -->
+        <div class="bg-gray-900 p-6 m-2 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold mb-4">Fastweb</h3>
+          <p class="mb-4 text-sm">Soluzioni high-tech e piani personalizzati per una connessione di qualità.</p>
+          <a href="https://www.fastweb.it" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded">Scopri di più</a>
+        </div>
+        <!-- Card per Iliad -->
+        <div class="bg-gray-900 p-6 m-2 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold mb-4">Iliad</h3>
+          <p class="mb-4 text-sm">Tariffe trasparenti ed innovative che rivoluzionano l'esperienza mobile.</p>
+          <a href="https://www.iliad.it" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded">Scopri di più</a>
+        </div>
+        <!-- Card per Very Mobile -->
+        <div class="bg-gray-900 p-6 m-2 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold mb-4">Very Mobile</h3>
+          <p class="mb-4 text-sm">Soluzioni elastiche e convenienti per chi cerca tariffe senza impegni.</p>
+          <a href="https://www.verymobile.it" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded">Scopri di più</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Nuova Sezione: FAQ Telefonia -->
+  <section id="faq-telefonia" class="py-16 bg-gray-700 relative overflow-hidden">
+    <div class="container mx-auto px-4 relative">
+      <h2 class="text-4xl font-bold text-center mb-8 text-teal-500">FAQ Telefonia</h2>
+      <div class="space-y-6 max-w-3xl mx-auto">
+        <div>
+          <h3 class="text-2xl font-semibold">Quali sono le principali offerte di telefonia?</h3>
+          <p class="mt-2 text-sm">Le principali offerte includono tariffe competitive, piani integrati per internet e telefonia mobile, e soluzioni personalizzate per aziende.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Posso cambiare operatore facilmente?</h3>
+          <p class="mt-2 text-sm">Sì, molti operatori consentono il passaggio senza interruzioni e offrono bonus per l’adesione a nuove offerte.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Come posso verificare la copertura nella mia zona?</h3>
+          <p class="mt-2 text-sm">Visita il sito ufficiale dell’operatore o utilizza app dedicate per controllare la copertura, in modo da assicurarti una buona connessione.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Nuova Sezione: Guide e Consigli -->
+  <section id="guide-consigli" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8 text-teal-500">Guide e Consigli</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold mb-3">Come Scegliere l'Operatore</h3>
+          <p class="mb-4 text-sm">Scopri i fattori chiave per scegliere il miglior operatore telefonico in base alle tue esigenze.</p>
+          <a href="#" class="inline-block bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded">Leggi di più</a>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold mb-3">I Vantaggi della Fibra Ottica</h3>
+          <p class="mb-4 text-sm">Approfondisci i benefici della fibra ottica e come migliora la tua esperienza digitale.</p>
+          <a href="#" class="inline-block bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded">Leggi di più</a>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-bold mb-3">Risparmiare sulla Telefonia</h3>
+          <p class="mb-4 text-sm">Suggerimenti e trucchi per ottenere le migliori tariffe telefoniche senza compromettere il servizio.</p>
+          <a href="#" class="inline-block bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded">Leggi di più</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nuova Sezione: Richiedi una Consulenza Gratuita -->
+  <section id="consulenza" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 text-teal-500">Richiedi una Consulenza Gratuita</h2>
+      <form id="consultationForm" class="max-w-lg mx-auto space-y-4">
+        <input type="text" id="nome" placeholder="Il tuo nome" required class="w-full p-3 rounded bg-gray-800 border border-gray-700" />
+        <input type="email" id="email" placeholder="La tua email" required class="w-full p-3 rounded bg-gray-800 border border-gray-700" />
+        <input type="tel" id="phone" placeholder="Il tuo numero di telefono" required class="w-full p-3 rounded bg-gray-800 border border-gray-700" />
+        <textarea id="message" placeholder="Il tuo messaggio" required rows="4" class="w-full p-3 rounded bg-gray-800 border border-gray-700"></textarea>
+        <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded">Invia Richiesta</button>
+      </form>
+      <!-- Modal di conferma -->
+      <div id="consultationModal" class="hidden fixed inset-0 flex items-centerjustify-center bg-black bg-opacity-50">
+        <div class="bg-gray-800 p-6 rounded">
+          <h3 class="text-2xl font-bold mb-4">Grazie!</h3>
+          <p class="mb-4">La tua richiesta è stata inviata. Ti contatteremo al più presto.</p>
+          <button id="closeModal" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nuova Sezione: Comparatore di Tariffe -->
+  <section id="comparatore-tariffe" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 text-teal-500">Comparatore di Tariffe</h2>
+      <!-- Raggruppa le card in un container con id="tariffCards" -->
+      <div id="tariffCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <!-- Tariffa: Super Fibra -->
+        <div class="bg-gray-800 border border-teal-500 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition p-6">
+          <div class="flex flex-col items-center">
+            <!-- Icona tariffa -->
+            <div class="text-teal-500 mb-4">
+              <i class="ri-signal-wifi-line text-6xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Windtre Super Fibra</h3>
+            <p class="text-xl font-semibold mb-4">27,99€ / mese</p>
+            <ul class="text-left space-y-2">
+              <li>Modem Wi-Fi 7 incluso</li>
+              <li>Chiamate illimitate incluse</li>
+              <li>GIGA illimitati sulle tue SIM</li>
+              <li>Amazon Prime per 12 mesi</li>
+              <li>Condizioni traffico illimitato</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Nuova Tariffa: Fastweb Casa -->
+        <div class="bg-gray-800 border border-teal-500 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition p-6">
+          <div class="flex flex-col items-center">
+            <!-- Icona tariffa, ad es. usando un'icona diversa -->
+            <div class="text-teal-500 mb-4">
+              <i class="ri-home-4-line text-6xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Fastweb Casa</h3>
+            <p class="text-xl font-semibold mb-4">29,95€ / mese</p>
+            <ul class="text-left space-y-2">
+              <li>Fibra ultraveloce</li>
+              <li>Chiamate illimitate verso fissi e mobili nazionali</li>
+              <li>Internet Box NeXXt One con Wi-Fi 6</li>
+              <li>Attivazione linea</li>
+              <li>Assicurazione Assistenza Casa o Assistenza Pet di Quixa</li>
+              <li>Corsi Fastweb Digital Academy</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Nuova Tariffa: Iliad Fibra -->
+        <div class="bg-gray-800 border border-teal-500 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition p-6">
+          <div class="flex flex-col items-center">
+            <!-- Icona tariffa -->
+            <div class="text-teal-500 mb-4">
+              <i class="ri-signal-wifi-line text-6xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Iliad Fibra</h3>
+            <p class="text-xl font-semibold mb-4">25,99€ / mese</p>
+            <ul class="text-left space-y-2">
+              <li>Connessione Fibra ultraveloce fino a 5 Gbps</li>
+              <li>Modem Wi-Fi 7 incluso</li>
+              <li>Chiamate illimitate verso fissi e mobili</li>
+              <li>Installazione a 39,99€</li>
+              <li>Assistenza clienti dedicata</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Professional -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Column 1: Azienda -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">AG SERVIZI VIA PLINIO 72 DI CAVALIERE CARMINE</h3>
+                <p class="mb-2">Offriamo consulenza, marketing e supporto tecnico per il tuo business.</p>
+                <p class="mb-2">&copy; 2025 AG SERVIZI VIA PLINIO 72 DI CAVALIERE CARMINE. Tutti i diritti riservati.</p>
+            </div>
+            <!-- Column 2: Link Utili -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Link Utili</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-teal-300 hover:underline">Home</a></li>
+                    <li><a href="blog.html" class="text-teal-300 hover:underline">Blog</a></li>
+                    <li><a href="privacy-policy.html" class="text-teal-300 hover:underline">Privacy Policy</a></li>
+                    <li><a href="#consulenza" class="text-teal-300 hover:underline">Contatti</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Newsletter -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Newsletter</h3>
+                <form id="newsletterForm" class="flex flex-col space-y-4">
+                    <input type="email" placeholder="Inserisci qui la tua email" required class="p-2 rounded text-gray-900" />
+                    <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded">
+                        Iscriviti
+                    </button>
+                    <p id="newsletterMessage" class="text-teal-300 hidden">Grazie per esserti iscritto!</p>
+                </form>
+            </div>
+            <!-- Column 4: Social & Contatti -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Seguici</h3>
+                <div class="flex space-x-4 mb-4">
+                    <a href="https://www.facebook.com/agserviziplinio.it/" aria-label="Facebook" class="text-teal-300 hover:text-teal-400">
+                        <i class="ri-facebook-fill ri-2x"></i>
+                    </a>
+                    <a href="https://wa.me/393773798570" aria-label="WhatsApp" class="text-teal-300 hover:text-teal-400">
+                        <i class="ri-whatsapp-line ri-2x"></i>
+                    </a>
+                </div>
+                <div>
+                    <p class="mb-1">Partita IVA: 08442881218</p>
+                    <p>Via Plinio il Vecchio 72, Castellammare di Stabia (NA)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+  <!-- Animazioni personalizzate -->
+  <style>
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInDown { animation: fadeInDown 1s ease-out; }
+    .animate-fadeInUp { animation: fadeInUp 1s ease-out; }
+  </style>
+  
+  <script src="../assets/js/main.js"></script>
+  <!-- Smooth scroll con offset speciali -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            if (target.id === 'consulenza') {
+              // Scorri in modo che il fondo della sezione Arrivi al fondo della viewport
+              const targetBottom = target.getBoundingClientRect().bottom + window.pageYOffset;
+              const scrollPos = targetBottom - window.innerHeight;
+              window.scrollTo({ top: scrollPos, behavior: 'smooth' });
+            } else {
+              // Offset per header fisso
+              const offset = 70;
+              const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+              window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
